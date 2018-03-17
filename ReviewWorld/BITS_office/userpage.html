@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+  <title>Fixed top navbar example for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!--  <link href="css/readmore.css" rel="stylesheet">-->
+
+  <link href="css/dynamic-rating.css" rel="stylesheet">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--  This CSS if for Readmore opton to work smootly with latest jquery(3.X.X)-->
+  <style type="text/css">
+    article+[data-readmore-toggle],
+    article[data-readmore] {
+      display: block;
+      width: 100%;
+    }
+
+    article[data-readmore] {
+      transition: height 400ms;
+      overflow: hidden;
+    }
+.text-right{
+   padding-right: 0px;
+}
+.rating-stars{
+margin-right: 2px;
+  }
+
+  .addIcoBtn {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #A5A5A5 #AAAAAA #959595;
+  cursor: pointer;
+  height: 24px;
+  /* font-weight: bold; */
+  min-width: 50px;
+  background-color: #FFFFFF;
+  color: firebrick;
+  padding-right: 12px;
+    padding-left:12px;
+  margin: 0em;
+ font: 400 13.3333px Arial;
+}
+.review-stats{
+color: royalblue;
+margin: 4px 8px 10px 2px;
+}
+.add-review-btn{
+    background-image: url(img/icon_add.gif);
+  color:white;
+  background-color: black;
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+.prod-itm-stats{
+  margin-bottom: 4px;
+}
+
+#bookmark-this {
+      padding: 10px 10px;
+      background-color: #0095ff;
+      border: 1px solid #eea236;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    #bookmark-this:hover {
+      background-color: #ec971f;
+      border: 1px solid #d58512;
+      text-decoration: none;
+    }
+
+    #bookmark-this:active {
+      background-color: #ec971f;
+      border: 1px solid #d58512;
+      -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+</style>
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top nbar-bg">
+    <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">BITS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto nbar-mg-rt">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  
+<div class="row">
+<div class="col-xs-3 col-md-3">
+
+  <img src="img/pro_pik.jpg" style="margin-bottom: 20px;" class="img-rounded item-usr-img" alt="Cinque Terre" width="250" height="300">
+
+ <a id="bookmark-this" href="#" title="Bookmark This Page">Bookmark This Page</a>
+</div>
+<div class="col-md-7">
+
+    <div class="item-user-info d-flex flex-row">
+    
+          <div class="item-usr-desc" style="width:100%;">
+            <div class="item-usr-personal-info " >
+              <span class="item-head-user-desc " style="max-width: 88%">User Name | User Description,User Description,
+              User Description,User Description,User Description </span>
+              <hr class="line" />
+            </div>
+
+
+            <div class="item-usr-personal-stat" style="margin-left: 0.6rem;min-height: 31px;">
+              <!-- <button type="button" class="btn btn-primary stats" style="margin: 2px 0 1px 1px;     background-color: #ad0b0b ">Primary |  <span class="badge" style="padding-left:2px;font-size:16px;">7</span></button>
+              <button type="button" class="btn btn-primary stats" style="margin: 2px 0 1px 1px;    background-color: #ad0b0b ">Primary |  <span class="badge" style="padding-left:2px;font-size:16px;">7</span></button>
+              <button type="button" class="btn btn-primary stats" style="margin: 2px 0 1px 1px;    background-color: #ad0b0b ">Primary |  <span class="badge" style="padding-left:2px;font-size:16px;">7</span></button>
+              <button type="button" class="btn btn-primary stats" style="margin: 2px 0 1px 1px;    background-color: #ad0b0b ">Primary |  <span class="badge" style="padding-left:2px;font-size:16px;">7</span></button>
+            -->
+            <input class="addIcoBtn" type="button" value="Favorite | 23" onclick="boardFavorite(10523);">
+            <input class="addIcoBtn" type="button" value="Favorite | 23" onclick="boardFavorite(10523);">
+            <input class="addIcoBtn" type="button" value="Favorite | 23" onclick="boardFavorite(10523);">
+            <input class="addIcoBtn" type="button" value="Favorite | 23" onclick="boardFavorite(10523);">
+            <input class="addIcoBtn" type="button" value="Favorite | 23" onclick="boardFavorite(10523);">
+            </div>
+          </div>
+        </div>
+        <hr/>
+
+ <article>
+            <p style="text-align: justify; margin-top:10px">From this distant vantage point, the Earth might not seem of any particular interest. But for us, it's different. Consider again that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard
+              of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer
+              of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint
+              and sinner in the history of our species lived there – on a mote of dust suspended in a sunbeam. Space, the final frontier. These are the voyages of the starship Enterprise. Its five year mission: to explore strange new worlds, to seek out
+              new life and new civilizations, to boldly go where no man has gone before! Here's how it is: Earth got used up, so we terraformed a whole new galaxy of Earths, some rich and flush with the new technologies, some not so much. Central Planets,
+              them was formed the Alliance, waged war to bring everyone under their rule; a few idiots tried to fight it, among them myself. I'm Malcolm Reynolds, captain of Serenity. Got a good crew: fighters, pilot, mechanic. We even picked up a preacher,
+              and a bona fide companion. There's a doctor, too, took his genius sister out of some Alliance camp, so they're keeping a low profile. You got a job, we can do it, don't much care what it is. Space, the final frontier. These are the voyages
+              of the starship Enterprise. Its five year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before!</p>
+          </article>
+
+</div>
+
+<div class="col-xs-3 col-md-3" >
+
+
+</div>
+
+</div>
+
+<hr style="margin: 10px 0;" />
+<div class="row">
+ <div class="col-md-12" style="background-color:darkgray">
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+            </tr>
+          
+        </tbody>
+    </table>
+
+ </div>
+
+</div>
+
+<hr/>
+</div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+
+ <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+ <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mockjax.js"></script>
+  <script src="js/readmore.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $('article').readmore({
+       speed: 500,
+      collapsedHeight: 281
+    });
+
+
+    $(document).ready(function() {
+    $('#example').DataTable();
+} );
+  </script>
+</body>
+</html>

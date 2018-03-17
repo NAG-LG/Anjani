@@ -1,0 +1,33 @@
+1. reandomEntriesForHomePage
+
+Note == random entries of database just pick any and giv
+
+
+2. entriesForCategory?catgorytype=userclickedcatogory
+
+NOTE == here catogory can be any of 5 or 10 we choose I will ask based on which one user clickded right now 
+
+3. topFiveReviesWithStats?productId=?
+
+NOTE= here based on to which produect user clcked 'See Reviews" we need to give top 3 or 5 revies based on upvotes counts or whatsoever criteria choosen
+
+4. upvoteCountIncrease?productId=?&&ReviewId=?
+
+NOTE == if user just simply upvoted any review belong to any product we need to update the upvote count of that review under that product.
+
+5. downvoteCountIncrease?productId=?&&ReviewId=?
+
+NOTE == same as Upvote Case
+
+6. UserCreate?userinfo = userEnteredINfo
+
+NOTE == if user click on WRITE-REVIEW button we will ask him to register or login and he will enter basic info i will send it as JSON to backend make arranagements to save it 
+
+7. userLogin ? userLogininfo=username and password
+
+NOTE== incase user already registerd before now just login is enough
+
+
+8. reviewSubmit?userId=userId&&revewText=reviewHeWrote&&productId=productId
+
+NOTE== after proper login/registration he will write and submits the reviews we need to add this under that product

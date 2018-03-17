@@ -1,0 +1,140 @@
+/* Show it is fixed to the top */
+ html,body { height: 100%; margin: 0px; padding: 0px; }
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  background-color: #e9ebee;
+}
+
+.nbar-bg {
+  background-color: #ad0b0b !important;
+}
+
+.navbar-brand {
+  margin-left: 18rem;
+}
+
+.nbar-mg-rt {
+  margin-right: 15rem;
+}
+
+.jumbotron {
+  max-width: 650px;
+  background-color: #fff;
+  margin-bottom: .7rem;
+  margin-left: 14rem;
+  border-radius: 0;
+  padding: .8rem 0.6rem 0 0.8rem;
+}
+
+.item-head {
+  margin-bottom: .2rem;
+      padding-left: 2px;
+}
+
+.item-type {
+  color: red;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+hr {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.item-head-user-desc {
+  font-size: 16px;
+
+  word-wrap: break-word;
+}
+
+.item-head-txt {
+  margin-left: .6rem;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.line {
+  margin-left: 9px;
+  width: 98%;
+}
+
+.prod-left {
+  max-width: 35%;
+  box-flex:1.0;
+  float: left;
+}
+
+.prod-right {
+  box-flex:1.0;
+  max-width: : 65%;
+  float: right;
+}
+
+
+.flex-container{
+	width: 100%;
+	min-height: 200px;
+
+	display: -webkit-flex; /* Safari */
+	display: flex; /* Standard syntax */
+}
+
+.flex-container .column{
+	padding: 10px;
+	background: #f1f1f1;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+.flex-container .column.bg-alt{
+	background: #b4bac0;
+}
+
+.vertical-line{
+    height:100%; //you might need some positioning for this to work, see other questions about 100% height
+    width:0;
+    border:1px solid black;
+}
+.prod-img{
+  padding-left: 12px;
+
+}
+
+.item-user-stat-part{
+  margin:4px 2px;
+}
+.stats{
+  margin:14px 8px 14px 4px;
+ padding: 0;
+ border-radius: .1rem;
+
+
+ white-space: nowrap;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ transition: opacity ease-in-out 100ms,color ease-in-out 100ms,background-color ease-in-out 100ms,border-color ease-in-out 100ms;
+ border-radius: 3px;
+ box-shadow: 0 1px 1px 0 rgba(200,200,200,0.2);
+ display: inline-block;
+ font-weight: 500;
+ outline: 0;
+ padding: 3px 7px 4px 7px;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ border: 1px solid #962520;
+ background: darkslategray;/*background: #b92b27; */
+ color: #fff;
+
+
+}
+.stats-extra{
+  margin: 19px 1px;
+}
